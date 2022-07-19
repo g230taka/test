@@ -1,5 +1,9 @@
-main: main.c
-	gcc -Wall -O -o main main.c -lm
+SRCS = main.c
+OBJS = main
+CC   = gcc
+
+$(OBJS): $(SRCS)
+	$(CC) -Wall -O -o $(OBJS) $(SRCS) -lm
 
 clean:
-	rm main *~
+	rm $(OBJS) *~
