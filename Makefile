@@ -7,4 +7,4 @@ $(OBJS): $(SRCS)
 	$(CC) -O -o 1 1.c
 
 clean:
-	rm $(OBJS)
+	rm $(OBJS) 1
